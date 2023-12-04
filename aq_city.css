@@ -1,0 +1,51 @@
+.background {
+  background-color: bisque;
+}
+
+.background {
+    font-family: system-ui;
+}
+
+.header {
+  margin: auto;
+  width: 95%;
+  /*border: 3px solid green; */
+  padding: 10px;
+  text-align: center;
+}
+
+.body {
+  margin: auto;
+  border-top: black;
+  border-top-style: double;
+  width: 95%;
+}
+    
+.td_left {
+  vertical-align: top;
+  width: 30%;
+  text-align: center;
+}
+
+td.td_left {
+    margin: auto;
+}
+.selector {
+  text-shadow: true;
+  font-size: x-large;
+  /* background-color: green; */
+  margin: 1em;
+  border: 0.1em;
+  font-weight: 900;
+  font-family: sans-serif;
+  border-style: outset;
+}
+.select_list {
+  width: 100%;
+}
+
+.chart {
+/*
+    width: f;
+*/
+}

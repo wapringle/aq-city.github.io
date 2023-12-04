@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<style>
+div.chart {
+    height: 1000px;
+}
+</style>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.11.3/brython.min.js"> </script> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.11.3/brython_stdlib.js"></script> 
+    <script src="https://cdn.jsdelivr.net/gh/andy31lewis/brycharts@latest/brycharts.brython.js"></script>
+</head>
+
+<body onload="brython()">
+<script type="text/python" src="aq_city.py"> </script>
+<link rel="stylesheet" href="aq_city.css" type="text/css">
+
+<script type="text/python">
+from browser import window
+import aq_city  
+
+
+aq_city.init()
+
+
+</script>
+</body>
+
+</html>
