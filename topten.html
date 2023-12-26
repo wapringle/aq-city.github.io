@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.10/brython.min.js">
+    </script> 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.10/brython_stdlib.js">
+    </script> 
+    <link rel="stylesheet" href="aq_city.css">
+</head>
+
+<body onload="brython()">
+<script type="text/python" src="aq_topten.py" id="data"> </script>
+
+
+<script type="text/python" id="prog" >
+import aq_topten
+
+
+aq_topten.init()
+
+</script>
+
+</body>
+
+</html>
