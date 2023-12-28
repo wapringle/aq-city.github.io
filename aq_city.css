@@ -84,7 +84,7 @@ rank-holder {
     top: 0px;
     width: calc(100% - 2ch);
     font-size: xx-large;
-    border-bottom-style: inset;
+    /* border-bottom-style: inset; */
 }
 
 .rank_detail {
