@@ -1,5 +1,17 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
 .background {
   background-color: bisque;
+}
+.border_bottom {
+    background-color: bisque;
+    border-bottom-width: 20px;
+    border-bottom: solid;
+    border-bottom-color: bisque;
+    border-bottom-width: 10px;
 }
 
 .background {
@@ -9,7 +21,7 @@
 .header {
   margin: auto;
   width: 95%;
-  /*border: 3px solid green; */
+  /* border: 3px solid green; */
   padding: 10px;
   text-align: center;
 }
@@ -18,6 +30,8 @@
   margin: auto;
   border-top: black;
   border-top-style: double;
+  border-bottom: azure;
+  border-bottom-width: 10px;
   width: 95%;
 }
     
@@ -49,3 +63,106 @@ td.td_left {
     width: f;
 */
 }
+
+/* for topten */
+rank-holder {
+    position: relative;
+    left: 0px; /* LHS of Ranking slots */
+    top: 0px; /* Top of same */
+    width: inherit; /* Horizontal margin of same */
+    height: inherit; /* vertical margin of same */
+}
+
+.rank {
+    background-color: white;
+    margin: 0px;
+    position: inherit;
+}
+.rank_hook {
+    position: absolute;
+    /*display: inline; */
+    top: 0px;
+    width: calc(100% - 2ch);
+    font-size: xx-large;
+    border-bottom-style: inset;
+}
+
+.rank_detail {
+    /* border-right-style: dotted; */
+    /* background-color: aqua; */
+    border-left-style: dashed;
+    border-width: thin;
+    width: 20px;
+}
+div.card {
+    /* background-color: lightblue; */
+    position: inherit;
+    font-size: medium;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    /* height: inherit; */
+    margin: 0px;
+}
+table.card-header {
+    height: 100%;
+    /*border-style: single; */
+    width: 100%;
+    height: 100%;
+    /* border-bottom: solid; */
+    /* border-left: solid; */
+}
+
+table#H0 {}
+div.card-text {
+    width: inherit; 
+    height: inherit - 30px;
+    margin: 2px;
+    /* background-color: white;  */
+    font-size: small;
+    font-family: sans-serif;
+    text-align: center;
+    }
+    
+
+div.play {
+  position: absolute;
+  
+}
+
+.card-header-text: {
+    font-size: small;
+}
+
+.index {font-size: x-large;text-align: right;width: 2ch;margin: 0px;border-bottom-style: solid;border-bottom-width: thin;border-bottom-color: black;border-style: ridge;vertical-align: top;}
+
+.control-text {
+    margin-right: 10px;}
+
+
+.Clock-Wrapper {
+    font-size: xx-large;
+    font-family: sans-serif;
+    }
+span.foreground {
+/*
+    font-family: "D7MBI";
+    z-index: 100;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    font-size: 30px;
+*/
+    
+}
+div.bar {
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: black;
+    background-color: blue;
+    height: 50%;
+    margin-left: 0px;
+    text-align: left;
+}
+
+.bar {}
