@@ -51,7 +51,7 @@ td.td_left {
   margin: 1em;
   border: 0.1em;
   font-weight: 900;
-  font-family: sans-serif;
+  font-family: monospace;
   border-style: outset;
 }
 .select_list {
@@ -84,7 +84,7 @@ rank-holder {
     top: 0px;
     width: calc(100% - 2ch);
     font-size: xx-large;
-    /* border-bottom-style: inset; */
+    /* */border-bottom-style: inset; */
 }
 
 .rank_detail {
@@ -99,24 +99,29 @@ div.card {
     position: inherit;
     font-size: medium;
     top: 0px;
-    left: 0px;
+    /* left: 0px; */
     width: 100%;
     /* height: inherit; */
-    margin: 0px;
+    margin: auto;
+    height: -webkit-fill-available;
+    /* vertical-align: bottom; */
+    /* margin-bottom: auto; */
 }
-table.card-header {
+
+.card-header {
     height: 100%;
     /*border-style: single; */
     width: 100%;
     height: 100%;
+    margin: auto;
     /* border-bottom: solid; */
     /* border-left: solid; */
 }
 
-table#H0 {}
+
 div.card-text {
     width: inherit; 
-    height: inherit - 30px;
+    height: inherit;
     margin: 2px;
     /* background-color: white;  */
     font-size: small;
@@ -130,8 +135,16 @@ div.play {
   
 }
 
-.card-header-text: {
-    font-size: small;
+div.card-header-text {
+    /* font-variant: all-petite-caps; */
+    font-size: large;
+    /* font-style: italic; */
+    margin: auto;
+    /* background-color: red; */
+    text-align:left;
+    margin-left: 0px;
+    font-family: courier;
+    font-weight: bold;
 }
 
 .index {font-size: x-large;text-align: right;width: 2ch;margin: 0px;border-bottom-style: solid;border-bottom-width: thin;border-bottom-color: black;border-style: ridge;vertical-align: top;}
@@ -161,8 +174,30 @@ div.bar {
     border-bottom-color: black;
     background-color: blue;
     height: 50%;
+    margin-left: 10px;
+    /* margin-left: 0px; */
+    /* text-align: left; */
+    margin: auto;
     margin-left: 0px;
-    text-align: left;
+    margin-block: auto;
 }
 
+
 .bar {}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 40% 10% 50%;
+  /* background-color: #2196F3; */
+  padding: 0px;
+  height: 100%;
+  /* vertical-align: bottom; */
+  /* margin: auto; */
+}
+.header-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
