@@ -78,15 +78,13 @@ def init():
     max_value = get_max_value()
     
 
-    paragraph1 = """
-Blah Blah Blah
-"""
+    paragraph1 = """Use the forward / back buttons to scroll through the Top Ten polluted cities over time"""
+
+    paragraph2 = """
+    Data is the concentration of particulate matter (e.g. soot particles) extracted from the UK Earth System  Model and averaged per decade. 
     """
-        inner = DIV(
-            select+
-            remove
-        )
-        """
+
+
     back_one = BUTTON("<", id="back_one", disabled=True, Class="selector")
     
     back_stream = BUTTON("<<", id="back_stream", disabled=True, Class="selector")
@@ -144,7 +142,7 @@ Blah Blah Blah
     head =  DIV(
                 DIV(H1("Top Ten Pollution Cities")) + 
                 P(paragraph1) +
-                P("More Blah") +
+                P(paragraph2) +
                 date_display, 
 
                 Class="header"
@@ -283,26 +281,13 @@ class AQContent():
         
         
 
-        header = TABLE(
-            TR(
-                TD(
-                    SPAN(self.City, id=f'Q{cardno}', Class="card-header-text"), 
-                    style={ "width": "40%",}
-                ) +
-                TD(
-                    SPAN('{:4.1f}'.format(self.Value), id=f'V{cardno}', Class="card-header-text") ,
-                    style={"width": "10%"}
-                ) +
-                TD(
+        header = DIV(
+                    DIV(self.City, id=f'Q{cardno}', Class="card-header-text") + 
+                    DIV('{:4.1f}'.format(self.Value), id=f'V{cardno}', Class="card-header-text") + 
                     DIV(
-                        DIV(id=bar_id, Class="bar"), 
+                        DIV(id=bar_id, Class="bar"),  Class="card-header-text", 
                         style={ "width": f"{barwid}%", "height": "50%",}
-                    ), 
-                    style={"width": "50%"}
-                )
-            ),
-            id=header_id,
-            Class="card-header",
+            ), id=header_id, Class="header-container"
         )
         return header            
 
@@ -316,7 +301,7 @@ class AQContent():
         card = DIV(header, 
             id=card_id,
             Class="card",
-            style={"position": "absolute", "height":px(height) })
+            style={"position": "absolute", "xheight":px(height) })
         busy = False
         return card
 
@@ -386,7 +371,7 @@ def single_step(forward=True):
 
     for card_id, c, p in mp:
         newt = content_deck[c].makeHeader(c)
-        oldh = document[card_id].select_one(".card-header")
+        oldh = document[card_id].select_one(".header-container")
         #print(card_id, c, p, oldh.text, newt.text)
         oldh.replaceWith(newt)
         
