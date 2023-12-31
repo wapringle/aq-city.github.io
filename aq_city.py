@@ -79,7 +79,7 @@ Data is the concentration of particulate matter (e.g. soot particles) extracted 
                 DIV(H1("Compare Historic Air Pollution Between Cities")) + 
                 P(paragraph1) +
                 P("Select up to 3 cities for Comparison using the + button. Remove from selection using the - button. Use the Compare button to generate graph.") + 
-                P("Click " + A("here", href="../topten.html") + " to track top ten cities through time."), 
+                P("Click " + A("here", href="../aqcity/topten.html") + " to track top ten cities through time."), 
                 
                 Class="header"
             )+
