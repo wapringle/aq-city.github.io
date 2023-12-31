@@ -80,11 +80,10 @@ rank-holder {
 }
 .rank_hook {
     position: absolute;
-    /*display: inline; */
     top: 0px;
     width: calc(100% - 2ch);
     font-size: xx-large;
-    /* */border-bottom-style: inset; */
+    /* border-bottom-style: inset; */
 }
 
 .rank_detail {
@@ -98,12 +97,11 @@ div.card {
     /* background-color: lightblue; */
     position: inherit;
     font-size: medium;
-    top: 0px;
     /* left: 0px; */
     width: 100%;
     /* height: inherit; */
-    margin: auto;
-    height: -webkit-fill-available;
+    margin: 5px;
+    height: 34px;
     /* vertical-align: bottom; */
     /* margin-bottom: auto; */
 }
@@ -137,7 +135,7 @@ div.play {
 
 div.card-header-text {
     /* font-variant: all-petite-caps; */
-    font-size: large;
+    /* font-size: large; */
     /* font-style: italic; */
     margin: auto;
     /* background-color: red; */
@@ -200,4 +198,18 @@ div.bar {
   padding: 20px;
   font-size: 30px;
   text-align: center;
+}
+
+.background-container {
+  display: grid;
+  grid-template-columns: 50% 12.5% 12.5% 12.5% 12.5% ;
+  background-color: #2196F3; 
+  padding: 0px;
+  height: 100%;
+  /* vertical-align: bottom; */
+  /* margin: auto; */
+}
+.background-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-right: 1px solid rgba(0, 0, 0, 0.8);
 }
