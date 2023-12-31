@@ -83,7 +83,7 @@ def init():
     p2 = """
     Data is the concentration of particulate matter (e.g. soot particles) extracted from the UK Earth System  Model and averaged per decade. 
     """               
-    paragraph2 = SPAN(p2) + P("Click " + A("here", href="../index.html") + " to compare Cities")
+    paragraph2 = SPAN(p2) + P("Click " + A("here", href="../aqcity/index.html") + " to compare Cities")
 
 
     back_one = BUTTON("<", id="back_one", disabled=True, Class="selector")
